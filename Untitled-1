@@ -1,0 +1,6 @@
+var results = [['khush', 23, 'sdf', 'sd'], ['sdsa', 34, 'sf', 'ssdf']]
+foo = {}
+for(i=0; i<=results.length; i++) {
+    console.log(i)
+
+}

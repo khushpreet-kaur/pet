@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Search by name </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    </head>
+    <body>
+        <form action="/search" method="POST">
+            Enter a name: <input type="text"  name="name"/> <br>
+            <button type="submit">Search</button>
+            {% if foo is defined %}
+            <table border: 1px; solid; #ccc>                
+                <tr>
+                    <th>Name:</th>
+                    <td>{{foo['name']}}</td>
+                </tr>
+                <tr>
+                    <th>Age:</th>
+                    <th>{{foo['age']}}</th>
+                </tr>
+                <tr>
+                    <th>Hobbies:</th>
+                    <th>{{foo['hobbies']}}</th>
+                </tr>
+                <tr>
+                    <th>Address:</th>
+                    <th>{{foo['address']}}</th>
+                </tr>
+            </table>
+            {% endif %}
+
+        
+        </form>
+    
+        <!-- <script src="main.js"></script> -->
+    </body>
+</html>
